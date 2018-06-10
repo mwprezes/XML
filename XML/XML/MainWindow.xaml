@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280">
     <Grid>
-        
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="647" Margin="10,10,0,0" VerticalAlignment="Top" Width="376"/>
+        <Button x:Name="save_btn" Content="Zapisz XML" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="read_btn" Content="Wczytaj XML" HorizontalAlignment="Left" Height="50" Margin="391,10,0,0" VerticalAlignment="Top" Width="159"/>
+        <Label x:Name="label" Content="Dodaj gre:" HorizontalAlignment="Left" Height="29" Margin="1007,22,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label x:Name="title_lbl" Content="Tytul:" HorizontalAlignment="Left" Height="31" Margin="833,77,0,0" VerticalAlignment="Top" Width="54"/>
+        <Label x:Name="developer_lbl" Content="Tworcy:" HorizontalAlignment="Left" Height="31" Margin="833,133,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label x:Name="releseDate_lbl" Content="Data Premiery:" HorizontalAlignment="Left" Height="31" Margin="833,187,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label x:Name="publisher_lbl" Content="Wydawca:" HorizontalAlignment="Left" Height="31" Margin="833,241,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label x:Name="price_lbl" Content="Cena:" HorizontalAlignment="Left" Height="31" Margin="833,301,0,0" VerticalAlignment="Top" Width="54"/>
+        <Label x:Name="productionYear_lbl" Content="Data Produkcji:" HorizontalAlignment="Left" Height="31" Margin="833,360,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="title_txt" HorizontalAlignment="Left" Height="31" Margin="952,77,0,0" TextWrapping="Wrap" Text="Tytul" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="dev_txt" HorizontalAlignment="Left" Height="31" Margin="952,133,0,0" TextWrapping="Wrap" Text="Dev" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="relese_txt" HorizontalAlignment="Left" Height="31" Margin="952,187,0,0" TextWrapping="Wrap" Text="Premiera" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="publisher_txt" HorizontalAlignment="Left" Height="31" Margin="952,241,0,0" TextWrapping="Wrap" Text="wydawca" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="price_txt" HorizontalAlignment="Left" Height="31" Margin="952,301,0,0" TextWrapping="Wrap" Text="Cena" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="production_txt" HorizontalAlignment="Left" Height="31" Margin="952,360,0,0" TextWrapping="Wrap" Text="Produkcja" VerticalAlignment="Top" Width="224"/>
+        <Label x:Name="id_lbl" Content="ID:" HorizontalAlignment="Left" Height="31" Margin="833,424,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label x:Name="genre_lbl" Content="Gatunek:" HorizontalAlignment="Left" Height="31" Margin="833,483,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="genre_txt" HorizontalAlignment="Left" Height="31" Margin="952,483,0,0" TextWrapping="Wrap" Text="Gatunek" VerticalAlignment="Top" Width="224"/>
+        <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="978,568,0,0" VerticalAlignment="Top" Width="159"/>
+
     </Grid>
 </Window>
