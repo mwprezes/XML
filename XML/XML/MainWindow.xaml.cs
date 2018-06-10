@@ -20,8 +20,14 @@ namespace XML
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Kolekcja collection;
+        private XMLReader reader;
+
         public MainWindow()
         {
+            collection = new Kolekcja();
+            reader = new XMLReader();
+            reader.Read("E:/Pobrane/zzSchool/XML/zad5/Repo/XML/zadanie5.xml", collection);
             InitializeComponent();
         }
     }
