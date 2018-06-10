@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,9 +27,19 @@ namespace XML
         public MainWindow()
         {
             collection = new Kolekcja();
-            reader = new XMLReader();
-            reader.Read("E:/Pobrane/zzSchool/XML/zad5/Repo/XML/zadanie5.xml", collection);
+            reader = new XMLReader();          
             InitializeComponent();
+        }
+
+        private void read_btn_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+            if (fileDialog.ShowDialog() == true)
+            {
+                string file = fileDialog.FileName;
+                reader.Read(file, collection);
+            }
         }
     }
 }

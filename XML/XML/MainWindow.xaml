@@ -9,7 +9,7 @@
     <Grid>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="647" Margin="10,10,0,0" VerticalAlignment="Top" Width="376"/>
         <Button x:Name="save_btn" Content="Zapisz XML" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159"/>
-        <Button x:Name="read_btn" Content="Wczytaj XML" HorizontalAlignment="Left" Height="50" Margin="391,10,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="read_btn" Content="Wczytaj XML" HorizontalAlignment="Left" Height="50" Margin="391,10,0,0" VerticalAlignment="Top" Width="159" Click="read_btn_Click"/>
         <Label x:Name="label" Content="Dodaj gre:" HorizontalAlignment="Left" Height="29" Margin="1007,22,0,0" VerticalAlignment="Top" Width="69"/>
         <Label x:Name="title_lbl" Content="Tytul:" HorizontalAlignment="Left" Height="31" Margin="833,77,0,0" VerticalAlignment="Top" Width="54"/>
         <Label x:Name="developer_lbl" Content="Tworcy:" HorizontalAlignment="Left" Height="31" Margin="833,133,0,0" VerticalAlignment="Top" Width="71"/>
