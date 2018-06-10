@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="zadanie4_toSVG.xslt"?>
+<dokumencik>
+	<temat>Faktura</temat>
+	<produkty>
+		<gra>
+			<tytuł>A Hat on a Timeline</tytuł>
+			<twórcy>Gears for Lunch</twórcy>
+			<wydawca>CD Projekt</wydawca>
+			<cena waluta="PLN">29.99</cena>
+		</gra>
+		<gra>
+			<tytuł>Flight Simulator</tytuł>
+			<twórcy>Microsoftware</twórcy>
+			<wydawca>Ubisoft</wydawca>
+			<zniżka>ZNIŻKA 10%</zniżka>
+			<cena waluta="PLN">35.99</cena>
+		</gra>
+		<gra>
+			<tytuł>Hitman</tytuł>
+			<twórcy>IO</twórcy>
+			<wydawca>Squere Enix</wydawca>
+			<zniżka>ZNIŻKA 10%</zniżka>
+			<cena waluta="PLN">215.96</cena>
+		</gra>
+		<gra>
+			<tytuł>Party Cleansing</tytuł>
+			<twórcy>NoRisk Studio</twórcy>
+			<wydawca>CD Projekt</wydawca>
+			<cena waluta="PLN">37.49</cena>
+		</gra>
+		<gra>
+			<tytuł>RWBY: Grim Eclipse</tytuł>
+			<twórcy>RT</twórcy>
+			<wydawca>EA</wydawca>
+			<zniżka>ZNIŻKA 10%</zniżka>
+			<cena waluta="PLN">35.99</cena>
+		</gra>
+		<gra>
+			<tytuł>Rat-ujcie!</tytuł>
+			<twórcy>NoFun Studio</twórcy>
+			<wydawca>CD Projekt</wydawca>
+			<cena waluta="PLN">33.99</cena>
+		</gra>
+		<gra>
+			<tytuł>Serca z Żelaza</tytuł>
+			<twórcy>Paradoxal</twórcy>
+			<wydawca>Squere Enix</wydawca>
+			<zniżka>ZNIŻKA 10%</zniżka>
+			<cena waluta="PLN">89.99</cena>
+		</gra>
+		<gra>
+			<tytuł>Wombat Combat</tytuł>
+			<twórcy>NoRisk Studio</twórcy>
+			<wydawca>CD Projekt</wydawca>
+			<cena waluta="PLN">37.49</cena>
+		</gra>
+	</produkty>
+	<Temat_Statystyk>Statystyki ogólne dokumentu</Temat_Statystyk>
+	<statystyki>
+		<Liczba_Gier>22</Liczba_Gier>
+		<Liczba_Gier_Akcji>8</Liczba_Gier_Akcji>
+		<Liczba_Gier_Strzelanek>5</Liczba_Gier_Strzelanek>
+		<Cena_Wszystkich_Gier>1186.8</Cena_Wszystkich_Gier>
+		<Data_Wygenerowania>2018-05-08T02:22:58.667+02:00</Data_Wygenerowania>
+	</statystyki>
+</dokumencik>
