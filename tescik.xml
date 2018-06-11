@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="zadanie5_wynik.xslt"?>
+<dokument>
+	<nagłówek>
+		<temat>
+			<tematTematu>THE BEST GAME COLLECTION</tematTematu>
+		</temat>
+		<podpis>
+			<autor>Mateusz Szejner</autor> &amp; <autor>Marcin Waligórski</autor>
+		</podpis>
+		<cytat>
+			&quot;Hello, 47&quot; <kto>Hitman</kto>
+		</cytat>
+	</nagłówek>
+	<kolekcja>
+		<zdjęcie/>
+		<tekst rok="2018"/>
+		<ulubione>
+			<gra id="p01" gatunek="Akcji">
+				<tytuł>Party Cleansing</tytuł>
+				<twórcy>NoRisk Studio</twórcy>
+				<data_premiery>2018-01-31</data_premiery>
+				<dystrybutor idref="d1"/>
+				<cena waluta="PLN">37.49</cena>
+				<rok_produkcji>2017</rok_produkcji>
+			</gra>
+			<gra id="p08" gatunek="Turowa &amp; Tower defense">
+				<tytuł>Rat-ujcie!</tytuł>
+				<twórcy>NoFun Studio</twórcy>
+				<data_premiery>2018-07-01</data_premiery>
+				<dystrybutor idref="d1"/>
+				<cena waluta="PLN">33.99</cena>
+				<rok_produkcji>2018</rok_produkcji>
+			</gra>
+			<data>PONIEDZIAŁEK 19 MARCA 2018 22:00</data>
+		</ulubione>
+		<zdjęcie/>
+		<tekst rok="2017"/>
+		<ulubione>
+			<gra id="p02" gatunek="Akcji">
+				<tytuł>Wombat Combat</tytuł>
+				<twórcy>NoRisk Studio</twórcy>
+				<data_premiery>2017-01-31</data_premiery>
+				<dystrybutor idref="d1"/>
+				<cena waluta="PLN">37.49</cena>
+				<rok_produkcji>2017</rok_produkcji>
+			</gra>
+			<gra id="p07" gatunek="Symulator">
+				<tytuł>Flight Simulator</tytuł>
+				<twórcy>Microsoftware</twórcy>
+				<data_premiery>2016-07-01</data_premiery>
+				<dystrybutor idref="d2"/>
+				<cena waluta="PLN">39.99</cena>
+				<rok_produkcji>2016</rok_produkcji>
+			</gra>
+			<gra id="p03" gatunek="Zombie &amp; coop">
+				<tytuł>Left for Bread</tytuł>
+				<twórcy>Valvo</twórcy>
+				<data_premiery>2010-08-12</data_premiery>
+				<dystrybutor idref="d4"/>
+				<cena waluta="PLN">19.99</cena>
+				<rok_produkcji>2010</rok_produkcji>
+			</gra>
+			<gra id="p06" gatunek="Akcji &amp; Skradanka">
+				<tytuł>Kredki Asasyna</tytuł>
+				<twórcy>UBI</twórcy>
+				<data_premiery>2008-08-08</data_premiery>
+				<dystrybutor idref="d2"/>
+				<cena waluta="PLN">29.99</cena>
+				<rok_produkcji>2008</rok_produkcji>
+			</gra>
+			<gra id="p04" gatunek="Akcji &amp; Skradanka">
+				<tytuł>Hitman</tytuł>
+				<twórcy>IO</twórcy>
+				<data_premiery>2017-07-07</data_premiery>
+				<dystrybutor idref="d5"/>
+				<cena waluta="EUR">59.99</cena>
+				<rok_produkcji>2017</rok_produkcji>
+			</gra>
+			<gra id="p05" gatunek="Strategia &amp; RTS">
+				<tytuł>Serca z Żelaza</tytuł>
+				<twórcy>Paradoxal</twórcy>
+				<data_premiery>2016-06-06</data_premiery>
+				<dystrybutor idref="d5"/>
+				<cena waluta="PLN">99.99</cena>
+				<rok_produkcji>2016</rok_produkcji>
+			</gra>
+			<data>ŚRODA 20 GRUDNIA 2017 23:34</data>
+		</ulubione>
+	</kolekcja>
+	<wydawcy>
+		<d id="d1">
+			<nazwa>CD Projekt</nazwa>
+			<miasto>Warszawa</miasto>
+			<ulica nr="91">Łódzka</ulica>
+			<kod_pocztowy>05-850</kod_pocztowy>
+			<telefon kier="22">733-51-50</telefon>
+		</d>
+		<d id="d2">
+			<nazwa>Ubisoft</nazwa>
+			<miasto>Montreal</miasto>
+			<ulica nr="21">Kanadyjska</ulica>
+			<kod_pocztowy>15-650</kod_pocztowy>
+			<telefon kier="15">548-35-50</telefon>
+		</d>
+		<d id="d3">
+			<nazwa>EA</nazwa>
+			<miasto>Hell</miasto>
+			<ulica nr="41">Hopeless</ulica>
+			<kod_pocztowy>30-666</kod_pocztowy>
+			<telefon kier="51">665-52-45</telefon>
+		</d>
+		<d id="d4">
+			<nazwa>Valve</nazwa>
+			<miasto>Waszyngton</miasto>
+			<ulica nr="53">Bellevue</ulica>
+			<kod_pocztowy>87-598</kod_pocztowy>
+			<telefon kier="22">245-87-77</telefon>
+		</d>
+		<d id="d5">
+			<nazwa>Squere Enix</nazwa>
+			<miasto>Nowy York</miasto>
+			<ulica nr="67">Parkowa</ulica>
+			<kod_pocztowy>10-894</kod_pocztowy>
+			<telefon kier="54">168-58-47</telefon>
+		</d>
+	</wydawcy>
+</dokument>

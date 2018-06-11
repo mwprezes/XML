@@ -26,7 +26,7 @@
         <TextBox x:Name="production_txt" HorizontalAlignment="Left" Height="31" Margin="952,360,0,0" TextWrapping="Wrap" Text="Produkcja" VerticalAlignment="Top" Width="224"/>
         <Label x:Name="id_lbl" Content="ID:" HorizontalAlignment="Left" Height="31" Margin="833,424,0,0" VerticalAlignment="Top" Width="98"/>
         <Label x:Name="genre_lbl" Content="Gatunek:" HorizontalAlignment="Left" Height="31" Margin="833,483,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>
+        <!--<TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>-->
         <TextBox x:Name="genre_txt" HorizontalAlignment="Left" Height="31" Margin="952,483,0,0" TextWrapping="Wrap" Text="Gatunek" VerticalAlignment="Top" Width="224"/>
         <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="970,555,0,0" VerticalAlignment="Top" Width="159" Click="add_btn_Click"/>
         <Button x:Name="edit_btn" Content="Edytuj" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159" Click="edit_btn_Click"/>

@@ -60,11 +60,11 @@ namespace XML
 
         private void edit_btn_Click(object sender, RoutedEventArgs e)
         {
-                if (selectedGame != null)
-                {
-                    EditWindow win = new EditWindow(selectedGame, collection, this);
-                    win.ShowDialog();
-                }
+            if (selectedGame != null)
+            {
+                EditWindow win = new EditWindow(selectedGame, collection, this);
+                win.ShowDialog();
+            }
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -88,7 +88,7 @@ namespace XML
 
         private void add_btn_Click(object sender, RoutedEventArgs e)
         {
-            if (title_txt.Text != null && id_txt.Text != null && genre_txt.Text != null)
+            if (title_txt.Text != null /*&& id_txt.Text != null*/ && genre_txt.Text != null)
             {
                 Gra game = new Gra();
                 game.Title = title_txt.Text;
@@ -97,7 +97,9 @@ namespace XML
                 game.Publisher = publisher_txt.Text;
                 game.Price = price_txt.Text;
                 game.Madedate = production_txt.Text;
-                game.Id = id_txt.Text;
+                //game.Id = id_txt.Text;
+                game.Id = collection.CheckID();
+
                 game.Genere = genre_txt.Text;
 
                 collection.AddGame(game);
@@ -107,7 +109,7 @@ namespace XML
 
         private void del_btn_Click(object sender, RoutedEventArgs e)
         {
-            if(selectedGame != null)
+            if (selectedGame != null)
             {
                 collection.Games.Remove(selectedGame);
                 UpdateCollection();
@@ -135,7 +137,7 @@ namespace XML
                 string fileOpen = fileOpenDialog.FileName;
                 transform.fileXSL = fileOpen;
             }
-      
+
         }
 
         private void transsave_btn_Click(object sender, RoutedEventArgs e)
