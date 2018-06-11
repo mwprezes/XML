@@ -42,10 +42,11 @@ namespace XML
             fileDialog.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
             if (fileDialog.ShowDialog() == true)
             {
+                collection = new Kolekcja();
                 string file = fileDialog.FileName;
                 reader.Read(file, collection);
-                listBox.ItemsSource = collection.Games;
-                listBox.DisplayMemberPath = "Title";
+                //listBox.ItemsSource = collection.Games;
+                //listBox.DisplayMemberPath = "Title";
                 writer.originalFile = file;
                 /*foreach(Gra game in collection.Games)
                 {
@@ -53,6 +54,7 @@ namespace XML
                     itm.Content = game.Title;
                     listBox.Items.Add(itm);
                 }*/
+                UpdateCollection();
             }
         }
 

@@ -46,6 +46,11 @@ namespace XML
                                 node.ChildNodes[4].InnerText = game.Price;
                                 node.ChildNodes[5].InnerText = game.Madedate;
                             }
+                            else
+                            {
+                                node.RemoveAll();
+                                node.ParentNode.RemoveChild(node);
+                            }
                             numOfGames++;
                         }
                     }

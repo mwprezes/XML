@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<dokument xmlns="http://www.example.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com zadanie5.xsd">
+<?xml-stylesheet type="text/xsl" href="zadanie5_wynik.xslt"?>
+<dokument>
   <nagłówek>
     <temat>
       <tematTematu>THE BEST GAME COLLECTION</tematTematu>
@@ -13,14 +14,6 @@
     <zdjęcie />
     <tekst rok="2018" />
     <ulubione>
-      <gra id="p01" gatunek="Akcji">
-        <tytuł>Party Cleansing</tytuł>
-        <twórcy>NoRisk Studio</twórcy>
-        <data_premiery>2018-01-31</data_premiery>
-        <dystrybutor idref="d1" />
-        <cena waluta="PLN">37.49</cena>
-        <rok_produkcji>2017</rok_produkcji>
-      </gra>
       <gra id="p08" gatunek="Turowa &amp; Tower defense">
         <tytuł>Rat-ujcie!</tytuł>
         <twórcy>NoFun Studio</twórcy>
@@ -29,11 +22,6 @@
         <cena waluta="PLN">33.99</cena>
         <rok_produkcji>2018</rok_produkcji>
       </gra>
-      <data>PONIEDZIAŁEK 19 MARCA 2018 22:00</data>
-    </ulubione>
-    <zdjęcie />
-    <tekst rok="2017" />
-    <ulubione>
       <gra id="p02" gatunek="Akcji">
         <tytuł>Wombat Combat</tytuł>
         <twórcy>NoRisk Studio</twórcy>
@@ -42,6 +30,11 @@
         <cena waluta="PLN">37.49</cena>
         <rok_produkcji>2017</rok_produkcji>
       </gra>
+      <data>PONIEDZIAŁEK 19 MARCA 2018 22:00</data>
+    </ulubione>
+    <zdjęcie />
+    <tekst rok="2017" />
+    <ulubione>
       <gra id="p07" gatunek="Symulator">
         <tytuł>Flight Simulator</tytuł>
         <twórcy>Microsoftware</twórcy>
@@ -71,7 +64,7 @@
         <twórcy>IO</twórcy>
         <data_premiery>2017-07-07</data_premiery>
         <dystrybutor idref="d5" />
-        <cena waluta="EUR">59.99</cena>
+        <cena waluta="PLN">59.99</cena>
         <rok_produkcji>2017</rok_produkcji>
       </gra>
       <gra id="p05" gatunek="Strategia &amp; RTS">
@@ -79,14 +72,9 @@
         <twórcy>Paradoxal</twórcy>
         <data_premiery>2016-06-06</data_premiery>
         <dystrybutor idref="d5" />
-        <cena waluta="PLN">99.99</cena>
+        <cena waluta="EUR">99.99</cena>
         <rok_produkcji>2016</rok_produkcji>
       </gra>
-      <data>ŚRODA 20 GRUDNIA 2017 23:34</data>
-    </ulubione>
-    <zdjęcie />
-    <tekst rok="2016" />
-    <ulubione>
       <gra id="p09" gatunek="Akcji">
         <tytuł>Black Spirits</tytuł>
         <twórcy>To Software</twórcy>
@@ -95,6 +83,11 @@
         <cena waluta="PLN">45.99</cena>
         <rok_produkcji>2015</rok_produkcji>
       </gra>
+      <data>ŚRODA 20 GRUDNIA 2017 23:34</data>
+    </ulubione>
+    <zdjęcie />
+    <tekst rok="2016" />
+    <ulubione>
       <gra id="p10" gatunek="Akcji &amp; Strzelanka &amp; FPS &amp; Fabuła">
         <tytuł>Full-Life 2: Episode 2.5</tytuł>
         <twórcy>Valvo</twórcy>
@@ -127,11 +120,6 @@
         <cena waluta="PLN">39.99</cena>
         <rok_produkcji>2016</rok_produkcji>
       </gra>
-      <data>CZWARTEK 17 LISTOPADA 2016 13:13</data>
-    </ulubione>
-    <zdjęcie />
-    <tekst rok="2015" />
-    <ulubione>
       <gra id="p13" gatunek="Strzelanka &amp; FPS &amp; Fabuła">
         <tytuł>Massive Effect</tytuł>
         <twórcy>Bio-Ware</twórcy>
@@ -140,6 +128,11 @@
         <cena waluta="PLN">129.99</cena>
         <rok_produkcji>2012</rok_produkcji>
       </gra>
+      <data>CZWARTEK 17 LISTOPADA 2016 13:13</data>
+    </ulubione>
+    <zdjęcie />
+    <tekst rok="2015" />
+    <ulubione>
       <gra id="p14" gatunek="Strzelanka &amp; FPS &amp; Fabuła">
         <tytuł>ShockingBio: Unlimited</tytuł>
         <twórcy>1K Inteactive</twórcy>
@@ -172,11 +165,6 @@
         <cena waluta="PLN">129.99</cena>
         <rok_produkcji>2013</rok_produkcji>
       </gra>
-      <data>SOBOTA 29 GRUDNIA 2015 00:01</data>
-    </ulubione>
-    <zdjęcie />
-    <tekst rok="2014" />
-    <ulubione>
       <gra id="p19" gatunek="Symulacja &amp; Logiczna">
         <tytuł>Kernel Space Program</tytuł>
         <twórcy>Team</twórcy>
@@ -185,6 +173,11 @@
         <cena waluta="PLN">59.99</cena>
         <rok_produkcji>2014</rok_produkcji>
       </gra>
+      <data>SOBOTA 29 GRUDNIA 2015 00:01</data>
+    </ulubione>
+    <zdjęcie />
+    <tekst rok="2014" />
+    <ulubione>
       <gra id="p20" gatunek="Strategia &amp; RTS">
         <tytuł>Space Wars: Empire at War</tytuł>
         <twórcy>PortoGlyph</twórcy>
@@ -206,20 +199,10 @@
         <twórcy>TODD</twórcy>
         <data_premiery>2011-11-11</data_premiery>
         <dystrybutor idref="d3" />
-        <cena waluta="EUR">69.99</cena>
+        <cena waluta="PLN">69.99</cena>
         <rok_produkcji>2011</rok_produkcji>
       </gra>
       <data>SOBOTA 29 LISTOPADA 2014 22:20</data>
-    </ulubione>
-    <ulubione xmlns="">
-      <gra id="ID" gatunek="Gatunek">
-        <tytuł>Tytul</tytuł>
-        <twórcy>Dev</twórcy>
-        <data_premiery>Premiera</data_premiery>
-        <dystrybutor idref="wydawca" />
-        <cena waluta="PLN">Cena</cena>
-        <rok_produkcji>Produkcja</rok_produkcji>
-      </gra>
     </ulubione>
   </kolekcja>
   <wydawcy>
