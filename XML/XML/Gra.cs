@@ -17,6 +17,10 @@ namespace XML
         string price;
         string madedate;
 
+        public Gra()
+        {
+        }
+
         public Gra(string id, string title, string genere, string dev, string releseDate, string publisher, string price, string madedate)
         {
             this.id = id;

@@ -78,5 +78,33 @@ namespace XML
             listBox.ItemsSource = collection.Games;
             listBox.DisplayMemberPath = "Title";
         }
+
+        private void add_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (title_txt.Text != null && id_txt.Text != null && genre_txt.Text != null)
+            {
+                Gra game = new Gra();
+                game.Title = title_txt.Text;
+                game.Dev = dev_txt.Text;
+                game.ReleseDate = relese_txt.Text;
+                game.Publisher = publisher_txt.Text;
+                game.Price = price_txt.Text;
+                game.Madedate = production_txt.Text;
+                game.Id = id_txt.Text;
+                game.Genere = genre_txt.Text;
+
+                collection.AddGame(game);
+                UpdateCollection();
+            }
+        }
+
+        private void del_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if(selectedGame != null)
+            {
+                collection.Games.Remove(selectedGame);
+                UpdateCollection();
+            }
+        }
     }
 }
