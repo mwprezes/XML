@@ -9,7 +9,7 @@
         Title="MainWindow" Height="720" Width="1280">
     <Grid>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="647" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" SelectionChanged="listBox_SelectionChanged"/>
-        <Button x:Name="save_btn" Content="Zapisz XML" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159" Click="save_btn_Click"/>
+        <Button x:Name="save_btn" Content="Zapisz XML" HorizontalAlignment="Left" Height="50" Margin="391,175,0,0" VerticalAlignment="Top" Width="159" Click="save_btn_Click"/>
         <Button x:Name="read_btn" Content="Wczytaj XML" HorizontalAlignment="Left" Height="50" Margin="391,10,0,0" VerticalAlignment="Top" Width="159" Click="read_btn_Click"/>
         <Label x:Name="label" Content="Dodaj gre:" HorizontalAlignment="Left" Height="29" Margin="1007,22,0,0" VerticalAlignment="Top" Width="69"/>
         <Label x:Name="title_lbl" Content="Tytul:" HorizontalAlignment="Left" Height="31" Margin="833,77,0,0" VerticalAlignment="Top" Width="54"/>
@@ -29,10 +29,10 @@
         <TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="genre_txt" HorizontalAlignment="Left" Height="31" Margin="952,483,0,0" TextWrapping="Wrap" Text="Gatunek" VerticalAlignment="Top" Width="224"/>
         <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="970,555,0,0" VerticalAlignment="Top" Width="159" Click="add_btn_Click"/>
-        <Button x:Name="edit_btn" Content="Edytuj" HorizontalAlignment="Left" Height="50" Margin="970,610,0,0" VerticalAlignment="Top" Width="159" Click="edit_btn_Click"/>
-        <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,133,0,0" VerticalAlignment="Top" Width="159" Click="del_btn_Click"/>
-        <Button x:Name="transopen_btn" Content="Wczytaj XSLT" HorizontalAlignment="Left" Height="50" Margin="391,242,0,0" VerticalAlignment="Top" Width="159" Click="transopen_btn_Click"/>
-        <Button x:Name="transsave_btn" Content="Stwórz XHTML" HorizontalAlignment="Left" Height="50" Margin="391,302,0,0" VerticalAlignment="Top" Width="159" Click="transsave_btn_Click"/>
+        <Button x:Name="edit_btn" Content="Edytuj" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159" Click="edit_btn_Click"/>
+        <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,120,0,0" VerticalAlignment="Top" Width="159" Click="del_btn_Click"/>
+        <Button x:Name="transopen_btn" Content="Wczytaj XSLT" HorizontalAlignment="Left" Height="50" Margin="391,271,0,0" VerticalAlignment="Top" Width="159" Click="transopen_btn_Click"/>
+        <Button x:Name="transsave_btn" Content="Stwórz XHTML" HorizontalAlignment="Left" Height="50" Margin="391,326,0,0" VerticalAlignment="Top" Width="159" Click="transsave_btn_Click"/>
 
     </Grid>
 </Window>
