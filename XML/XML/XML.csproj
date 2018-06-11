@@ -61,6 +61,7 @@
     <Compile Include="Wydawca.cs" />
     <Compile Include="XMLReader.cs" />
     <Compile Include="XMLWriter.cs" />
+    <Compile Include="XSLTransformation.cs" />
     <Page Include="EditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

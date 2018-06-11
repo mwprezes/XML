@@ -24,6 +24,7 @@ namespace XML
         public Kolekcja collection;
         private XMLReader reader;
         private XMLWriter writer;
+        private XSLTransformation transform;
         private Gra selectedGame;
 
         public MainWindow()
@@ -31,6 +32,7 @@ namespace XML
             collection = new Kolekcja();
             reader = new XMLReader();
             writer = new XMLWriter();
+            transform = new XSLTransformation();
             InitializeComponent();
         }
 
@@ -120,5 +122,32 @@ namespace XML
                 writer.Write(file, collection);
             }
         }
+
+        private void transopen_btn_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileOpenDialog = new OpenFileDialog();
+            fileOpenDialog.Filter = "XSLT files (*.xslt)|*.xslt|All files (*.*)|*.*";
+
+            if (fileOpenDialog.ShowDialog() == true)
+            {
+                string fileOpen = fileOpenDialog.FileName;
+                transform.fileXSL = fileOpen;
+            }
+      
+        }
+
+        private void transsave_btn_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog fileSaveDialog = new SaveFileDialog();
+            fileSaveDialog.Filter = "XHTML files (*.xhtml)|*.xhtml|All files (*.*)|*.*";
+
+            if (fileSaveDialog.ShowDialog() == true)
+            {
+                string fileSave = fileSaveDialog.FileName;
+                transform.Transform(writer.originalFile, fileSave);
+            }
+        }
+
+
     }
 }

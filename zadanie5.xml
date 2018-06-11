@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<dokument xmlns="http://www.example.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com zadanie5.xsd">
+<?xml-stylesheet type="text/xsl" href="zadanie5_wynik.xslt"?>
+<dokument>
 	<nagłówek>
 		<temat>
 			<tematTematu>THE BEST GAME COLLECTION</tematTematu>

@@ -31,6 +31,8 @@
         <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="970,555,0,0" VerticalAlignment="Top" Width="159" Click="add_btn_Click"/>
         <Button x:Name="edit_btn" Content="Edytuj" HorizontalAlignment="Left" Height="50" Margin="970,610,0,0" VerticalAlignment="Top" Width="159" Click="edit_btn_Click"/>
         <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,133,0,0" VerticalAlignment="Top" Width="159" Click="del_btn_Click"/>
+        <Button x:Name="transopen_btn" Content="Wczytaj XSLT" HorizontalAlignment="Left" Height="50" Margin="391,242,0,0" VerticalAlignment="Top" Width="159" Click="transopen_btn_Click"/>
+        <Button x:Name="transsave_btn" Content="Stwórz XHTML" HorizontalAlignment="Left" Height="50" Margin="391,302,0,0" VerticalAlignment="Top" Width="159" Click="transsave_btn_Click"/>
 
     </Grid>
 </Window>
