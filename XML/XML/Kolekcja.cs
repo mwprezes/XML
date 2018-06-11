@@ -35,5 +35,10 @@ namespace XML
         {
             publishers.Add(publisher);
         }
+        public void AddPublisher(string id, string name, string city, string street, string streetnr, string postal, string phone, string kier)
+        {
+            Wydawca wyd = new Wydawca(id, name, city, street, streetnr, postal, phone, kier);
+            publishers.Add(wyd);
+        }
     }
 }
