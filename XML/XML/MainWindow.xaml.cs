@@ -23,12 +23,14 @@ namespace XML
     {
         public Kolekcja collection;
         private XMLReader reader;
+        private XMLWriter writer;
         private Gra selectedGame;
 
         public MainWindow()
         {
             collection = new Kolekcja();
-            reader = new XMLReader();          
+            reader = new XMLReader();
+            writer = new XMLWriter();
             InitializeComponent();
         }
 
@@ -42,6 +44,7 @@ namespace XML
                 reader.Read(file, collection);
                 listBox.ItemsSource = collection.Games;
                 listBox.DisplayMemberPath = "Title";
+                writer.originalFile = file;
                 /*foreach(Gra game in collection.Games)
                 {
                     ListBoxItem itm = new ListBoxItem();
@@ -104,6 +107,17 @@ namespace XML
             {
                 collection.Games.Remove(selectedGame);
                 UpdateCollection();
+            }
+        }
+
+        private void save_btn_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            fileDialog.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+            if (fileDialog.ShowDialog() == true)
+            {
+                string file = fileDialog.FileName;
+                writer.Write(file, collection);
             }
         }
     }

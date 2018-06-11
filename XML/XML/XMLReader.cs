@@ -10,10 +10,12 @@ namespace XML
 {
     class XMLReader
     {
+        public string file;
         //https://www.youtube.com/watch?v=M4aXKPN0nK0
 
         public void Read(string file, Kolekcja collection)
         {
+            this.file = file;
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(file);
             foreach (XmlNode mainNode in xmlDoc.DocumentElement)
