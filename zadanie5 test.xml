@@ -30,14 +30,6 @@
         <rok_produkcji>2018</rok_produkcji>
       </gra>
       <data>PONIEDZIAŁEK 19 MARCA 2018 22:00</data>
-      <gra id="ID" gatunek="Dev" xmlns="">
-        <tytuł>Tytul</tytuł>
-        <twórcy>Dev</twórcy>
-        <data_premiery>Premiera</data_premiery>
-        <dystrybutor idref="wydawca" />
-        <cena waluta="PLN">Cena</cena>
-        <rok_produkcji>Produkcja</rok_produkcji>
-      </gra>
     </ulubione>
     <zdjęcie />
     <tekst rok="2017" />
@@ -218,6 +210,16 @@
         <rok_produkcji>2011</rok_produkcji>
       </gra>
       <data>SOBOTA 29 LISTOPADA 2014 22:20</data>
+    </ulubione>
+    <ulubione xmlns="">
+      <gra id="ID" gatunek="Gatunek">
+        <tytuł>Tytul</tytuł>
+        <twórcy>Dev</twórcy>
+        <data_premiery>Premiera</data_premiery>
+        <dystrybutor idref="wydawca" />
+        <cena waluta="PLN">Cena</cena>
+        <rok_produkcji>Produkcja</rok_produkcji>
+      </gra>
     </ulubione>
   </kolekcja>
   <wydawcy>

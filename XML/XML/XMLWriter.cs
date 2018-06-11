@@ -61,6 +61,7 @@ namespace XML
                 while (collection.Games.Count != numOfGames)
                 {
                     Gra game = collection.Games[numOfGames];
+                    XmlElement ulubione = doc.CreateElement("ulubione");
                     XmlElement newGame = doc.CreateElement("gra");
                         XmlAttribute newID = doc.CreateAttribute("id");
                             newID.InnerText = game.Id;
@@ -91,8 +92,8 @@ namespace XML
                     XmlElement prod = doc.CreateElement("rok_produkcji");
                         prod.InnerText = game.Madedate;
                         newGame.AppendChild(prod);
-
-                    doc.DocumentElement.ChildNodes[1].ChildNodes[2].AppendChild(newGame);
+                    ulubione.AppendChild(newGame);
+                    doc.DocumentElement.ChildNodes[1].AppendChild(ulubione);
 
                     numOfGames++;
                 }
