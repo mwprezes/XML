@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XML"
+        xmlns:vms="clr-namespace:XML"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280">
     <Grid>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="647" Margin="10,10,0,0" VerticalAlignment="Top" Width="376"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="647" Margin="10,10,0,0" VerticalAlignment="Top" Width="376" SelectionChanged="listBox_SelectionChanged"/>
         <Button x:Name="save_btn" Content="Zapisz XML" HorizontalAlignment="Left" Height="50" Margin="391,65,0,0" VerticalAlignment="Top" Width="159"/>
         <Button x:Name="read_btn" Content="Wczytaj XML" HorizontalAlignment="Left" Height="50" Margin="391,10,0,0" VerticalAlignment="Top" Width="159" Click="read_btn_Click"/>
         <Label x:Name="label" Content="Dodaj gre:" HorizontalAlignment="Left" Height="29" Margin="1007,22,0,0" VerticalAlignment="Top" Width="69"/>
@@ -27,7 +28,9 @@
         <Label x:Name="genre_lbl" Content="Gatunek:" HorizontalAlignment="Left" Height="31" Margin="833,483,0,0" VerticalAlignment="Top" Width="98"/>
         <TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="genre_txt" HorizontalAlignment="Left" Height="31" Margin="952,483,0,0" TextWrapping="Wrap" Text="Gatunek" VerticalAlignment="Top" Width="224"/>
-        <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="978,568,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="add_btn" Content="Dodaj do XML" HorizontalAlignment="Left" Height="50" Margin="970,555,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="edit_btn" Content="Edytuj" HorizontalAlignment="Left" Height="50" Margin="970,610,0,0" VerticalAlignment="Top" Width="159" Click="edit_btn_Click"/>
+        <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,133,0,0" VerticalAlignment="Top" Width="159"/>
 
     </Grid>
 </Window>

@@ -1,24 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace XML
 {
-    class Kolekcja
+    public class Kolekcja
     {
-        private List<Gra> games;
-        private List<Wydawca> publishers;
+        private ObservableCollection<Gra> games;
+        private ObservableCollection<Wydawca> publishers;
 
         public Kolekcja()
         {
-            games = new List<Gra>();
-            publishers = new List<Wydawca>();
+            games = new ObservableCollection<Gra>();
+            publishers = new ObservableCollection<Wydawca>();
         }
 
-        public List<Gra> Games { get => games; set => games = value; }
-        public List<Wydawca> Publishers { get => publishers; set => publishers = value; }
+        public ObservableCollection<Gra> Games { get => games; set => games = value; }
+        public ObservableCollection<Wydawca> Publishers { get => publishers; set => publishers = value; }
 
         public void AddGame(Gra game)
         {

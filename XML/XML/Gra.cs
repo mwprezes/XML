@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XML
 {
-    class Gra
+    public class Gra
     {
         string id;
         string title;

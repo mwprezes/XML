@@ -21,8 +21,9 @@ namespace XML
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Kolekcja collection;
+        public Kolekcja collection;
         private XMLReader reader;
+        private Gra selectedGame;
 
         public MainWindow()
         {
@@ -39,7 +40,43 @@ namespace XML
             {
                 string file = fileDialog.FileName;
                 reader.Read(file, collection);
+                listBox.ItemsSource = collection.Games;
+                listBox.DisplayMemberPath = "Title";
+                /*foreach(Gra game in collection.Games)
+                {
+                    ListBoxItem itm = new ListBoxItem();
+                    itm.Content = game.Title;
+                    listBox.Items.Add(itm);
+                }*/
             }
+        }
+
+        private void edit_btn_Click(object sender, RoutedEventArgs e)
+        {
+                if (selectedGame != null)
+                {
+                    EditWindow win = new EditWindow(selectedGame, collection, this);
+                    win.ShowDialog();
+                }
+        }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //string title = (listBox.SelectedItem as ListBoxItem).Content.ToString();
+            //selectedGame = collection.Games.Find(x => x.Title == title);
+            if (listBox.SelectedItem != null)
+            {
+                string title = (listBox.SelectedItem as Gra).Title;
+                selectedGame = listBox.SelectedItem as Gra;
+            }
+        }
+
+        public void UpdateCollection()
+        {
+            listBox.ItemsSource = null;
+            listBox.Items.Clear();
+            listBox.ItemsSource = collection.Games;
+            listBox.DisplayMemberPath = "Title";
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XML
 {
-    class Wydawca
+    public class Wydawca
     {
 
     }
