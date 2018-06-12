@@ -84,6 +84,11 @@ namespace XML
             listBox.Items.Clear();
             listBox.ItemsSource = collection.Games;
             listBox.DisplayMemberPath = "Title";
+
+            publisher_txt.ItemsSource = collection.Publishers;
+            publisher_txt.DisplayMemberPath = "Name";
+
+            idshow_lbl.Content = collection.CheckID();
         }
 
         private void add_btn_Click(object sender, RoutedEventArgs e)
@@ -94,7 +99,7 @@ namespace XML
                 game.Title = title_txt.Text;
                 game.Dev = dev_txt.Text;
                 game.ReleseDate = relese_txt.Text;
-                game.Publisher = publisher_txt.Text;
+                game.Publisher = (publisher_txt.SelectedItem as Wydawca).Id;
                 game.Price = price_txt.Text;
                 game.Madedate = production_txt.Text;
                 //game.Id = id_txt.Text;

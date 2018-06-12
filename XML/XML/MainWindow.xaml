@@ -21,9 +21,11 @@
         <TextBox x:Name="title_txt" HorizontalAlignment="Left" Height="31" Margin="952,77,0,0" TextWrapping="Wrap" Text="Tytul" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="dev_txt" HorizontalAlignment="Left" Height="31" Margin="952,133,0,0" TextWrapping="Wrap" Text="Dev" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="relese_txt" HorizontalAlignment="Left" Height="31" Margin="952,187,0,0" TextWrapping="Wrap" Text="Premiera" VerticalAlignment="Top" Width="224"/>
-        <TextBox x:Name="publisher_txt" HorizontalAlignment="Left" Height="31" Margin="952,241,0,0" TextWrapping="Wrap" Text="wydawca" VerticalAlignment="Top" Width="224"/>
+        <!--<TextBox x:Name="publisher_txt" HorizontalAlignment="Left" Height="31" Margin="952,241,0,0" TextWrapping="Wrap" Text="wydawca" VerticalAlignment="Top" Width="224"/>-->
+        <ComboBox x:Name="publisher_txt" HorizontalAlignment="Left" Height="31" Margin="952,241,0,0" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="price_txt" HorizontalAlignment="Left" Height="31" Margin="952,301,0,0" TextWrapping="Wrap" Text="Cena" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="production_txt" HorizontalAlignment="Left" Height="31" Margin="952,360,0,0" TextWrapping="Wrap" Text="Produkcja" VerticalAlignment="Top" Width="224"/>
+        <Label x:Name="idshow_lbl" Content="Id" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" VerticalAlignment="Top" Width="62"/>
         <Label x:Name="id_lbl" Content="ID:" HorizontalAlignment="Left" Height="31" Margin="833,424,0,0" VerticalAlignment="Top" Width="98"/>
         <Label x:Name="genre_lbl" Content="Gatunek:" HorizontalAlignment="Left" Height="31" Margin="833,483,0,0" VerticalAlignment="Top" Width="98"/>
         <!--<TextBox x:Name="id_txt" HorizontalAlignment="Left" Height="31" Margin="952,424,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="224"/>-->
@@ -33,6 +35,7 @@
         <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,120,0,0" VerticalAlignment="Top" Width="159" Click="del_btn_Click"/>
         <Button x:Name="transopen_btn" Content="Wczytaj XSLT" HorizontalAlignment="Left" Height="50" Margin="391,271,0,0" VerticalAlignment="Top" Width="159" Click="transopen_btn_Click"/>
         <Button x:Name="transsave_btn" Content="Stwórz XHTML" HorizontalAlignment="Left" Height="50" Margin="391,326,0,0" VerticalAlignment="Top" Width="159" Click="transsave_btn_Click"/>
+        
 
     </Grid>
 </Window>
