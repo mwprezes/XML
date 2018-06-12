@@ -35,7 +35,9 @@
         <Button x:Name="del_btn" Content="Usuń wpis" HorizontalAlignment="Left" Height="50" Margin="391,120,0,0" VerticalAlignment="Top" Width="159" Click="del_btn_Click"/>
         <Button x:Name="transopen_btn" Content="Wczytaj XSLT" HorizontalAlignment="Left" Height="50" Margin="391,271,0,0" VerticalAlignment="Top" Width="159" Click="transopen_btn_Click"/>
         <Button x:Name="transsave_btn" Content="Stwórz XHTML" HorizontalAlignment="Left" Height="50" Margin="391,326,0,0" VerticalAlignment="Top" Width="159" Click="transsave_btn_Click"/>
-        
+        <Button x:Name="validation_btn" Content="Walidacja Schema" HorizontalAlignment="Left" Height="50" Margin="391,425,0,0" VerticalAlignment="Top" Width="159" Click="validation_btn_Click"/>
+        <Label x:Name="valinfo_lbl" Content="Poprawność walidacji" HorizontalAlignment="Left" Height="31" Margin="391,496,0,0" VerticalAlignment="Top" Width="159"/>
+
 
     </Grid>
 </Window>

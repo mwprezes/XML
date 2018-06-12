@@ -58,6 +58,7 @@
       <DependentUpon>EditWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kolekcja.cs" />
+    <Compile Include="XMLSchema.cs" />
     <Compile Include="Wydawca.cs" />
     <Compile Include="XMLReader.cs" />
     <Compile Include="XMLWriter.cs" />

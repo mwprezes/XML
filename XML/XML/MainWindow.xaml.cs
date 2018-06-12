@@ -25,6 +25,7 @@ namespace XML
         private XMLReader reader;
         private XMLWriter writer;
         private XSLTransformation transform;
+        private XMLSchema schema;
         private Gra selectedGame;
 
         public MainWindow()
@@ -33,6 +34,7 @@ namespace XML
             reader = new XMLReader();
             writer = new XMLWriter();
             transform = new XSLTransformation();
+            schema = new XMLSchema();
             InitializeComponent();
         }
 
@@ -157,6 +159,18 @@ namespace XML
             }
         }
 
+        private void validation_btn_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileOpenDialog = new OpenFileDialog();
+            fileOpenDialog.Filter = "XSD files (*.xsd)|*.xsd|All files (*.*)|*.*";
 
+            if (fileOpenDialog.ShowDialog() == true)
+            {
+                string fileOpen = fileOpenDialog.FileName;
+                schema.Validation(writer.originalFile, fileOpen);
+                valinfo_lbl.Content = schema.message;
+            }
+        }
+        
     }
 }
