@@ -109,7 +109,13 @@ namespace XML
 
                 game.Genere = genre_txt.Text;
 
+                
+
                 collection.AddGame(game);
+                writer.Write("temp.xml", collection);
+                schema.Validation("temp.xml", "E:/Pobrane/Shool/xml/XML/zadanie5.xsd" );
+                valinfo_lbl.Content = schema.message;
+
                 UpdateCollection();
             }
         }

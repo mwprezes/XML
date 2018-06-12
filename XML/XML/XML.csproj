@@ -57,6 +57,9 @@
     <Compile Include="EditWindow.xaml.cs">
       <DependentUpon>EditWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Error.xaml.cs">
+      <DependentUpon>Error.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kolekcja.cs" />
     <Compile Include="XMLSchema.cs" />
     <Compile Include="Wydawca.cs" />
@@ -64,6 +67,10 @@
     <Compile Include="XMLWriter.cs" />
     <Compile Include="XSLTransformation.cs" />
     <Page Include="EditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Error.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

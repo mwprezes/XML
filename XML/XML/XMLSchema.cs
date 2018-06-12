@@ -13,18 +13,27 @@ namespace XML
     {
         public string message;
         public string Message { get => message; set => message = value; }
+        static Error popup;
 
         public void Validation(string fileXML, string fileSchema)
         {
-            XmlSchemaSet schema = new XmlSchemaSet();
-            schema.Add("http://www.example.com", fileSchema);
+            try
+            {
+                XmlSchemaSet schema = new XmlSchemaSet();
+                schema.Add("http://www.example.com", fileSchema);
 
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(fileXML);
-            xmlDoc.Schemas = schema;
-            xmlDoc.Validate(ValidationHandler);
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.Load(fileXML);
+                xmlDoc.Schemas = schema;
+                xmlDoc.Validate(ValidationHandler);
 
-            message = "Validation finished";
+                message = "Validation finished";
+            } catch(Exception e)
+            {
+                message = e.Message;
+                popup = new Error(e.Message);
+                popup.ShowDialog();
+            }
         }
 
 
@@ -34,12 +43,16 @@ namespace XML
             {
                 Console.Write("WARNING: ");
                 Console.WriteLine(e.Message);
+                popup = new Error(e.Message);
+                popup.ShowDialog();
             }
             else if (e.Severity == XmlSeverityType.Error)
             {
                 Console.Write("ERROR: ");
                 Console.WriteLine(e.Message);
+                popup = new Error(e.Message);
+                popup.ShowDialog();
             }
-        }
+        }       
     }
 }
